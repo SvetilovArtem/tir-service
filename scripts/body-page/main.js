@@ -42,3 +42,31 @@ const burger = document.querySelector('.burger')
 burger.addEventListener('click', () => {
     hiddenMenu.classList.toggle('_active')
 })
+
+// NAVIGATOR
+const mapLink = document.querySelector('.map-link')
+mapLink.addEventListener('click', findLocation)
+
+function findLocation() {
+    if (!navigator.geolocation) {
+      confirm('Ваш браузер не дружит с геолокацией...')
+    } else {
+      navigator.geolocation.getCurrentPosition(success, error)
+    }
+  
+    function success(position) {
+      const { longitude, latitude }  = position.coords
+
+      const targetLong = '53.851527'
+      const targetLat = '27.694907'
+  
+      mapLink.href = `yandexnavi://build_route_on_map?lat_from=${latitude}&lon_from=${longitude}&lat_to=${targetLat}&lon_to=${targetLong}`
+      window.open(mapLink.href)
+    }
+  
+    function error() {
+      confirm('Не получается определить вашу геолокацию :(')
+    }
+}
+
+
