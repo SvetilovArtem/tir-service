@@ -42,7 +42,7 @@
             align-items: center;
             opacity: 0;
             transform: translateY(120%);
-            transition: all .8s ease-in-out;
+            transition: all .8s ease-in-out .8s;
             @media (max-width: 1615px) {
                 background-position: top 0 left 0;
             }
@@ -55,7 +55,7 @@
                 text-align: center;
                 opacity: 0;
                 transform: translateY(120%);
-                transition: all .8s ease-in-out 0.3s;
+                transition: all .8s ease-in-out 1.3s;
                 @media (max-width: 1315px) {
                     font-size: 40px;
                 }
@@ -304,7 +304,7 @@
             align-items: center;
             color: $white;
             opacity: 0;
-            transition: all .8s ease-in-out;
+            transition: all .8s ease-in-out .8s;
             transform: translateY(120%);
 
             .service-header__title {
@@ -314,7 +314,7 @@
                 line-height: 100%;
                 letter-spacing: 1.1px;
                 opacity: 0;
-                transition: all .8s ease-in-out .4s;
+                transition: all .8s ease-in-out 1.3s;
                 transform: translateY(120%);
                 @media (max-width: 1150px) {
                     display: none;
@@ -500,8 +500,19 @@
             background-position: top 0 left 50%;
             background-size: cover;
             margin-bottom: 64px;
+            opacity: 0;
+            transform: translateY(120%);
+            transition: all .8s ease-in-out .8s;
         }
-
+        .diesel-header__title {
+            opacity: 0;
+            transform: translateY(120%);
+            transition: all .8s ease-in-out 1.3s;
+        }
+        &._active .diesel-header, &._active .diesel-header__title {
+            opacity: 1;
+            transform: translateY(0);
+        }
         .diesel-center {
             display: grid;
             grid-template-columns: 1fr 0.93fr;
@@ -603,6 +614,18 @@
             background-position: top 0 left 50%;
             background-size: cover;
             margin-bottom: 64px;
+            opacity: 0;
+            transform: translateY(120%);
+            transition: all .8s ease-in-out .8s;
+        }
+        .body-header__title {
+            opacity: 0;
+            transform: translateY(120%);
+            transition: all .8s ease-in-out 1.3s;
+        }
+        &._active .body-header, &._active .body-header__title {
+            opacity: 1;
+            transform: translateY(0);
         }
         .body-content {
             background-image: url(../icons/bg.svg);

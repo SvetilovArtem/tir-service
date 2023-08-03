@@ -441,7 +441,7 @@ img {
   align-items: center;
   opacity: 0;
   transform: translateY(120%);
-  transition: all 0.8s ease-in-out;
+  transition: all 0.8s ease-in-out 0.8s;
 }
 @media (max-width: 1615px) {
   #offer-section .offer-block .offer-block__header {
@@ -456,7 +456,7 @@ img {
   text-align: center;
   opacity: 0;
   transform: translateY(120%);
-  transition: all 0.8s ease-in-out 0.3s;
+  transition: all 0.8s ease-in-out 1.3s;
 }
 @media (max-width: 1315px) {
   #offer-section .offer-block .offer-block__header .offer-block__title {
@@ -702,7 +702,7 @@ img {
   align-items: center;
   color: #fff;
   opacity: 0;
-  transition: all 0.8s ease-in-out;
+  transition: all 0.8s ease-in-out 0.8s;
   transform: translateY(120%);
 }
 #offer-section .service-block .service-header .service-header__title {
@@ -712,7 +712,7 @@ img {
   line-height: 100%;
   letter-spacing: 1.1px;
   opacity: 0;
-  transition: all 0.8s ease-in-out 0.4s;
+  transition: all 0.8s ease-in-out 1.3s;
   transform: translateY(120%);
 }
 @media (max-width: 1150px) {
@@ -895,6 +895,18 @@ img {
   background-position: top 0 left 50%;
   background-size: cover;
   margin-bottom: 64px;
+  opacity: 0;
+  transform: translateY(120%);
+  transition: all 0.8s ease-in-out 0.8s;
+}
+#offer-section .diesel-block .diesel-header__title {
+  opacity: 0;
+  transform: translateY(120%);
+  transition: all 0.8s ease-in-out 1.3s;
+}
+#offer-section .diesel-block._active .diesel-header, #offer-section .diesel-block._active .diesel-header__title {
+  opacity: 1;
+  transform: translateY(0);
 }
 #offer-section .diesel-block .diesel-center {
   display: grid;
@@ -993,6 +1005,18 @@ img {
   background-position: top 0 left 50%;
   background-size: cover;
   margin-bottom: 64px;
+  opacity: 0;
+  transform: translateY(120%);
+  transition: all 0.8s ease-in-out 0.8s;
+}
+#offer-section .body-block .body-header__title {
+  opacity: 0;
+  transform: translateY(120%);
+  transition: all 0.8s ease-in-out 1.3s;
+}
+#offer-section .body-block._active .body-header, #offer-section .body-block._active .body-header__title {
+  opacity: 1;
+  transform: translateY(0);
 }
 #offer-section .body-block .body-content {
   background-image: url(../icons/bg.svg);
