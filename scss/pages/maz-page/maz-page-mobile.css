@@ -318,22 +318,22 @@ body {
   }
 }
 .offer-content__container .offer-list._active .offer-item:nth-child(1) {
-  transition: all 0.8s ease-in-out;
+  transition: all 0.8s ease-in-out 0.4s;
   transform: translateY(0);
   opacity: 1;
 }
 .offer-content__container .offer-list._active .offer-item:nth-child(2) {
-  transition: all 0.8s ease-in-out 0.3s;
+  transition: all 0.8s ease-in-out 0.8s;
   transform: translateY(0);
   opacity: 1;
 }
 .offer-content__container .offer-list._active .offer-item:nth-child(3) {
-  transition: all 0.8s ease-in-out 0.6s;
+  transition: all 0.8s ease-in-out 1.2s;
   transform: translateY(0);
   opacity: 1;
 }
 .offer-content__container .offer-list._active .offer-item:nth-child(4) {
-  transition: all 0.8s ease-in-out 0.9s;
+  transition: all 0.8s ease-in-out 1.6s;
   transform: translateY(0);
   opacity: 1;
 }
@@ -638,6 +638,6 @@ body {
 @media (max-width: 767px) {
   #footer {
     font-size: 12px;
-    padding: 20px 0;
+    padding: 20px;
   }
 }/*# sourceMappingURL=maz-page-mobile.css.map */
