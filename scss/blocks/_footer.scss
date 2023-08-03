@@ -1,0 +1,16 @@
+#footer {
+    padding: 27px 0;
+    background-color: $dark;
+    color: $white;
+    font-family: $font-special;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 100%;
+    .footer-item:not(:last-child) {
+        margin-bottom: 3px;
+    }
+    @media (max-width: 767px) {
+        font-size: 12px;
+        padding: 20px 0;
+    }
+}

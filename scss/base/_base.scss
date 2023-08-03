@@ -1,0 +1,38 @@
+
+body {
+    font-family: $font-main;
+    font-size: 28px;
+    color: $dark;
+    font-weight: 400;
+}
+
+a {
+    color: $dark;
+    transition: color .3s ease-in;
+}
+img {
+    width: 100%;
+}
+
+.container {
+    max-width: 1560px;
+    margin: 0 auto;
+    @media (max-width: 1615px) {
+        max-width: 1250px;
+        padding: 0 20px;
+    }
+    @media (max-width: 767px) {
+        padding: 0 20px;
+    }
+}
+
+._anim-show {
+    transform: translateY(120%);
+    opacity: 0;
+    transition: all .8s ease-in-out;
+}
+
+._anim-show._active, ._active ._anim-show {
+    opacity: 1;
+    transform: translateY(0);
+}

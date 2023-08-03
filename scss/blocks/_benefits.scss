@@ -1,0 +1,81 @@
+#benefits-section {
+    .benefits-header {
+        padding: 7px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid #797975;
+        .benefits-title {
+            font-size: 40px;
+            font-weight: 500;
+            line-height: 130%;
+            @media (max-width: 650px) {
+                font-size: 17px;
+                line-height: 100%;
+                padding: 22px 0;
+            }
+        }
+        .benefits-logo {
+            width: 154px;
+            height: 144px;
+            @media (max-width: 700px) {
+                display: none;
+            }
+        }
+    }
+    .container._active .benefits {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    .benefits {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        padding: 64px 0;
+        border-bottom: 1px solid #797975;
+        transform: translateY(120%);
+        transition: all .8s ease-in-out .5s;
+        opacity: 0;
+        @media (max-width: 1615px) {
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+        }
+        @media (max-width: 1150px) {
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+        }
+        @media (max-width: 650px) {
+            padding: 28px 0 15px 0;
+        }
+        .benefit {
+            background-color: $light-grey;
+            padding: 57px 37px;
+            box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+            @media (max-width: 650px) {
+                padding: 20px;
+            }
+            .benefit-name {
+                font-size: 35px;
+                line-height: 110%;
+                margin-bottom: 38px;
+                font-weight: 600;
+                @media (max-width: 650px) {
+                    font-size: 20px;
+                    margin-bottom: 16px;
+                }
+            }
+            .benefit-descr {
+                font-size: 28px;
+                line-height: 150%;
+                @media (max-width: 650px) {
+                    font-size: 15px;
+                    line-height: 130%;
+                }
+            }
+        }
+    }
+    ._active {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
